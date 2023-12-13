@@ -1,0 +1,487 @@
+<!-- The DOCTYPE declaration specifies the document type and version of HTML -->
+<!DOCTYPE html>
+
+<!-- Opening tag for the HTML document with the language attribute set to English -->
+<html lang="en">
+
+<head>
+    <!-- Contains metadata about the HTML document -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibility settings for Internet Explorer -->
+    <meta name="author" content="Batool's Portfolio"> <!-- Author metadata -->
+    <title>Batool's Portfolio</title> <!-- Title of the document -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to an external CSS file -->
+</head>
+
+<body>
+    <!-- Start of the body section -->
+
+    <!-- A container div for the navigation and content -->
+    <div class="container">
+
+        <!-- Navigation section -->
+        <nav>
+            <!-- Logo for the portfolio -->
+            <div class="logo">Batool AlTameemi</div>
+
+            <!-- Unordered list containing navigation links -->
+            <ul class="navItems">
+                <!-- List items containing anchor tags for different sections -->
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Past Work</a></li>
+                <li><a href="#Challenge">Artworks</a></li>
+                <li><a href="#portfolio">Features</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+
+            <!-- Links to social media profiles -->
+            <div class="links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </nav>
+
+        <!-- Wrapper div containing content -->
+        <div class="wrapper">
+            <!-- Div for columns -->
+            <div class="cols cols0">
+                <!-- Text elements -->
+                <span class="topline">Hi I'M BATOOL</span>
+                <h1>I'M <span class="multiText">an Artist</span></h1>
+                <p></p>
+                <!-- Button to download CV -->
+                <div class="btns">
+                    <a href="images/Batool's CV 2023 NYC.pdf" download="Your_CV.pdf">
+                        <button>Download my CV</button>
+                    </a>
+                </div>
+
+                <!-- Images -->
+                <div class="images">
+                    <img src="images/shape.png" class="shape">
+                    <img src="images/girl.png" class="girl">
+                    <img src="images/2.png" class="two">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script tag to import Typed.js library -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- JavaScript code for typing effect using Typed.js -->
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ["a Designer", "an Activist", "a Painter"], // Note the comma after "strings"
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        });
+    </script>
+
+<!-- -----------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Batool</h1>
+                <p>Batool Al Tameemi is a 2004 artist (19 Years Old) of Iraqi
+                    heritage living in the UAE. Batool’s work revolves around
+                    expressionism and impressionism yet explores other art
+                    methods. She is interested in the ways humans convey
+                    different emotions and feelings and has this reflected on
+                    her canvases. Her work touches on many social themes and
+                    contests. She has been a part of many art programs in the
+                    UAE which made her today an art instructor. Batool
+                    presented more than 30 art workshops to many students as
+                    the number of her students exceeded 1000. Batool was
+                    awarded for her art by many local art contests including
+                    Painting for Palestine contest, Qasr al hosn the eyes of
+                    youth contest and many other contests, and has exhibited
+                    her work at multiple galleries in the UAE. She studies today
+                    at New York University Abu Dhabi and works as an art
+                    instructor at Sharjah children’s centres, she is also the print
+                    studio monitor at New York University Abu Dhabi
+                    </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Graphic Design</span><br>Designing on digital platforms like Abobe Illustrator, Fresco, Procreate and Canva</li>
+                        <li><span>Video Editing</span><br>Professional Video Editing on Capcut and Imovie</li>
+                        <li><span>Coding</span><br>Java, C++, Matlab, Processing, P5.js, HTML, CSS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>January 2023- Present</span><br>Design and Communication intern at the Department of Community Outreach</li>
+                        <li><span>August 2023- Present</span><br>Global Career Peer at the Career Development Center</li>
+                        <li><span>August 2023- Present </span><br>Visual Design intern at the Student Health Center </li>
+                        <li><span>January 2023- May 2023</span><br>Spiritual Life ambassador at the Department of Spiritual Life and Intellectual Education and conflict transformation (SLICET)
+                        </li>
+                        <li><span>September 2022- December 2022</span><br>Print Studio Monitor</li>
+                        <li><span>July-August 2022</span><br>Social media Intern at Sajaya Young Ladies of Sharjah</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Current</span><br> New York University Abu Dhabi/ B.A in Interactive media</li>
+                        <li><span>2022</span><br>High school diploma Al Wahda Private school/ Validictorian</li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">Past Work in Comm Lab</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>30MMF</h2>
+                <img src="images/30mmf.png" alt="Image Description 1">
+                <a href="https://batoolaltameemi.github.io/Commlab.github.io/">Visit the website</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Interactive Comic</h2>
+                <img src="images/grindtime.png" alt="Image Description 1">
+                <a href="https://fadyjohn10.github.io/Comm-Lab-Assignment2/CommLabAssignment2/">Visit the website</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Sound Project</h2>
+                <img src="images/horrorcast.png" alt="Image Description 1">
+                <a href="https://lujain-elmallah.github.io/CommLab3/index.html">Visit the website</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Video Project</h2>
+                <img src="images/main101.png" alt="Image Description 1">
+                <a href="https://fadyjohn10.github.io/Comm-Lab/Comm%20Lab%20Assignment4/index.html">Visit the website</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>PRX Effect</h2>
+                <img src="images/scroll.png" alt="Image Description 1">
+                <a href="https://batoolaltameemi.github.io/PRLX.github.io/">Visit the website</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Class Assignments</h2>
+                <img src="images/385550573_1356675441596651_2176419995640004949_n.jpg" alt="Image Description 1">
+                <a href=" https://batoolaltameemi.github.io/WeeklyAssignments.github.io/">Visit the website</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------------5 Mins Self Challenges-------------- -->
+<section id="Challenge">
+    <div class="container">
+      <h1 class="sub-title">Artworks</h1>
+  
+      <div class="cards-container">
+        <!-- First Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img src= "images/IMG_0904.jpeg" alt="1">
+            </div>
+            <div class="back">
+              <img src="images/IMG_0435.jpeg" alt="Avatar 2">
+            </div>
+          </div>
+        </div>
+  
+        <!-- Second Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img src="images/312966868_1731105277272007_980660452302937137_n.jpg" alt="Avatar 3">
+            </div>
+            <div class="back">
+              <img src="images/315098564_5503484299700861_7371492839108686771_n.jpg"Avatar 4">
+            </div>
+          </div>
+        </div>
+  
+        <!-- Third Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img src="images/315100905_491965636047216_4744256330464340607_n.jpg" alt="Avatar 6">
+            </div>
+            <div class="back">
+              <img src="images/315111732_662677918599788_6632992114119362822_n.jpg" alt="Avatar 5">
+            </div>
+          </div>
+        </div>
+  
+        <!-- Fourth Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img src="images/315266676_860106031839225_2665265724155910886_n.jpg" alt="Avatar 8">
+            </div>
+            <div class="back">
+              <img src="images/315273140_661633822207740_858973143270572207_n.jpg" alt="Avatar 7">
+            </div>
+          </div>
+        </div>
+  
+        <!-- Fifth Card -->
+        <div class="card-container">
+          <div class="card">
+            <div class="front">
+              <img src="images/315436540_831791314809833_8882349920849461350_n.jpg" alt="Avatar 9">
+            </div>
+            <div class="back">
+              <img src="images/315492449_1218824905510964_7339316142082469644_n.jpg" alt="Avatar 10">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- ----------portfolio------------ -->
+<section id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Features</h1>
+        <div class="work-list">
+            <div class="work">
+                <iframe width="315" height="200" src="https://www.youtube.com/embed/w04iQyfmaV0?si=1IOew66F-3Ea8PCy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- <div class="layer">
+                    <h3>Al Sharqia From Kalba</h3>
+                    <p>An interview about my Tote Bag arts</p>
+                    <a href="https://youtu.be/w04iQyfmaV0?feature=shared"><i class="fas fa-external-link-alt"></i></a>
+                </div> -->
+            </div>
+            <div class="work">
+                <iframe width="315" height="200" src="https://www.youtube.com/embed/e1bKCXdD6LA?si=wOVWrUWJg2e24rhO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- <div class="layer">
+                    <h3> Al Dafra TV</h3>
+                    <p>An Interview about winning second place in Smart Joint Competition</p>
+                    <a href="https://youtu.be/e1bKCXdD6LA?feature=shared"><i class="fas fa-external-link-alt"></i></a>
+                </div> -->
+            </div>
+            <div class="work">
+                <iframe width="315" height="200" src="https://www.youtube.com/embed/8iqys4_CYTI?si=YdgxJTYBI5NYvAIR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- <div class="layer">
+                    <h3>Dubai TV</h3>
+                    <p>An Interview about my contributions in COP28</p>
+                    <a href="https://youtu.be/8iqys4_CYTI?feature=shared"><i class="fas fa-external-link-alt"></i></a>
+                </div> -->
+            </div>
+            <div class="work">
+                <img width="360" height="200" src="images/alroya.png">
+                <div class="layer">
+                    <h3>Al Roeya News</h3>
+                    <p>An interview about my Love for art and how I nurtured it</p>
+                    <a href="https://www.alroeya.com/130-41/2179311-%D8%A8%D8%AA%D9%88%D9%84-%D8%A7%D9%84%D8%AA%D9%85%D9%8A%D9%85%D9%8A-%D8%A3%D9%86%D8%A7%D9%85%D9%84-%D8%A8%D8%B1%D9%8A%D8%A6%D8%A9-%D8%AA%D8%B1%D8%B3%D9%85-%D8%A7%D9%84%D8%A3%D9%85%D9%84-%D9%88%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%A4%D9%84-%D8%A8%D8%A7%D9%84%D8%B1%D9%8A%D8%B4%D8%A9-%D9%88%D8%A7%D9%84%D8%A3%D9%84%D9%88%D8%A7%D9%86"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <iframe width="360" height="200" src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Fshjtv%2Fvideos%2F176729094591098%2F&show_text=false&width=378&t=0" width="378" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                <!-- <div class="layer">
+                    <h3>Sharjah TV</h3>
+                    <p>An Interview about winning second place in Smart Joint Competition and my smart apps</p>
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.facebook.com%2Fshjtv%2Fvideos%2F%25D8%25A8%25D8%25AA%25D9%2588%25D9%2584-%25D9%2583%25D9%2581%25D8%25A7%25D8%25AD-%25D8%25A7%25D9%2584%25D8%25AA%25D9%2585%25D9%258A%25D9%2585%25D9%258A-%25D8%25AA%25D8%25A8%25D8%25AA%25D9%2583%25D8%25B1-%25D8%25AA%25D8%25B7%25D8%25A8%25D9%258A%25D9%2582%25D8%25A7%25D9%258B-%25D8%25B0%25D9%2583%25D9%258A%25D8%25A7%25D9%258B-%25D9%258A%25D8%25B9%25D8%25B1%25D8%25B6-%25D8%25A7%25D9%2584%25D8%25A3%25D8%25B9%25D9%2585%25D8%25A7%25D9%2584-%25D8%25A7%25D9%2584%25D9%2581%25D9%2586%25D9%258A%25D8%25A9-%25D8%25B9%25D9%2584%25D9%2589-%25D8%25A7%25D9%2584%25D9%2587%25D8%25A7%25D8%25AA%25D9%2581%25D9%258A%25D9%2585%25D9%2583%25D9%2586%25D9%2583%25D9%2585-%25D9%2585%25D8%25AA%25D8%25A7%25D8%25A8%25D8%25B9%2F176729094591098%2F%3Flocale%3Dhi_IN&psig=AOvVaw0MW_U4znUfoS58AuKlXUgE&ust=1702245285424000&source=images&cd=vfe&opi=89978449&ved=0CBIQjhxqFwoTCLj-6v6rg4MDFQAAAAAdAAAAABAl"><i class="fas fa-external-link-alt"></i></a>
+                </div> -->
+            </div>
+            <div class="work">
+                <iframe width="315" height="200" src="https://www.youtube.com/embed/8g7CkiZsK1Y?si=8tVv78VoS3oJKUVD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <!-- <div class="layer">
+                    <h3>Sharjah TV</h3>
+                    <p>An Interview about the world guiding day</p>
+                    <a href="https://www.youtube.com/watch?v=8g7CkiZsK1Y&pp=ygUo2YXZgdip2LbZitipINmF2LHYtNiv2KfYqiDYp9mE2LTYp9ix2YLYqQ%3D%3D"><i class="fas fa-external-link-alt"></i></a>
+                </div> -->
+            </div>
+        <!-- </div>
+        <a href="#" class="btn">See more</a>
+    </div> -->
+</section>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+            </div>
+        </script>
+        <form id="my-form" action="https://formspree.io/f/xleyqylp" method="POST">
+      <label>Email:</label>
+      <input type="email" name="email" />
+      <label>Message:</label>
+      <input type="text" name="message" />
+      <button id="my-form-button">Submit</button>
+      <p id="my-form-status"></p>
+    </form>
+    <!-- Place this script at the end of the body tag -->
+    <script>
+        var form = document.getElementById("my-form");
+        
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+            if (response.ok) {
+              status.innerHTML = "Thanks for your submission!";
+              form.reset()
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                } else {
+                  status.innerHTML = "Oops! There was a problem submitting your form"
+                }
+              })
+            }
+          }).catch(error => {
+            status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+        form.addEventListener("submit", handleSubmit)
+    </script>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="module">
+    import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+  
+    new fairyDustCursor();
+</script>
+
+<footer>
+    <!-- This starts the footer section. -->
+
+    <section class="social-section" id="contactme">
+        <!-- This starts a section for social links and contact information with an id "contactme". -->
+        <h2>I would love to collaborate with you</h2>
+        <!-- This displays a heading for the contact information. -->
+        <div class="social-links">
+            <!-- This defines a container for social links. -->
+            <a href="https://www.instagram.com/batoliart" target="_blank" class="social-link">
+                <!-- This is a link to Instagram. -->
+                <img src="images/instagram.png" alt="Instagram">
+                <!-- This displays the Instagram logo. -->
+                @batoliart
+            </a>
+            <!-- Similar links for TikTok, email, and LinkedIn with their respective logos. -->
+            </a>
+            <a href="mailto:bka2027@nyu.edu" class="social-link">
+                <img src="images/email.png" alt="Email">
+                bka2027@nyu.edu
+            </a>
+            <a href="https://www.linkedin.com/in/batool-al-tameemi" target="_blank" class="social-link">
+                <img src="images/linkedin.png" alt="linkedin">
+                Batool Al Tameemi
+            </a>
+            <a href="https://www.tiktok.com/@batoliart?lang=en" target="_blank" class="social-link">
+                <img src="images/tik-tok.png" alt="linkedin">
+                @batoliart
+            </a>
+        </div>
+
+    </section>
+
+</footer>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+
+
+</script>
+<script>
+// //     const scriptURL = '<https://script.google.com/macros/s/AKfycbxOYxna5IsRrPKgFZ02AIX5AdyBrlBiZbAilCkWdpyoYHVCsJkFJl2laUHA95KNJQIT/exec>' // add your own app script link here
+// //     const form = document.forms['submit-to-google-sheet']
+// //     const msg = document.getElementById("msg")
+  
+// //     form.addEventListener('submit', e => {
+// //       e.preventDefault()
+// //       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+// //         .then(response => {
+// //             msg.innerHTML = "Message sent successfully"
+// //             setTimeout(function(){
+// //                 msg.innerHTML = ""
+// //             },5000)
+// //             form.reset()
+// //         })
+// //         .catch(error => console.error('Error!', error.message))
+
+// //     })
+
+// //     fetch(scriptURL, {
+// //     method: 'POST',
+// //     body: new FormData(form),
+// // }) -->// .then(response => {
+//     if (!response.ok) {
+//         throw new Error('Network response was not ok.');
+//     }
+//     // Handle successful form submission
+//     msg.innerHTML = "Message sent successfully";
+//     setTimeout(function() {
+//         msg.innerHTML = "";
+//     }, 5000);
+//     form.reset();
+// })
+// .catch(error => {
+//     console.error('There was an error!', error);
+//     // Handle errors in form submission
+//     msg.innerHTML = "Error submitting the form. Please try again later.";
+// });
+//   
+
+</script> 
+</body>
+</html>

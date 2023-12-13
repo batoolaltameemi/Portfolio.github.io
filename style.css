@@ -1,0 +1,715 @@
+/* Reset default margin, padding, and font for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive; /* Set default font family */
+    font-family: 'IBM Plex Sans Arabic', sans-serif; /* Override font family */
+    font-family: 'Libre Franklin', sans-serif; /* Override font family */
+    font-family: 'Mukta', sans-serif; /* Override font family */
+    /* font-family: 'Poppins', sans-serif; */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Custom styling for scrollbar width, track, and handle */
+/* Set scrollbar width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track styling */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; /* Add shadow to the track */
+    border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Handle styling */
+::-webkit-scrollbar-thumb {
+    background: #174d98; /* Set background color for the scrollbar handle */
+    border-radius: 10px; /* Rounded corners for the handle */
+}
+
+/* Smooth scrolling behavior for the entire document */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global styles for body */
+body {
+    background: rgb(239, 227, 200); /* Set background color */
+    color: #000000; /* Set text color */
+}
+
+/* Styling for container class */
+.container {
+    padding: 10px 10%; /* Set padding for container */
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    padding-top: 1%;
+    width: 100%;
+    justify-content: space-around; /* Align navigation items */
+    height: 80px;
+    z-index: 111; /* Set z-index for stacking order */
+}
+
+/* Logo styles */
+.logo {
+    display: flex;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Navigation items styles */
+.navItems {
+    display: flex;
+    list-style: none; /* Remove default list style */
+}
+
+/* Styles for individual navigation items */
+.navItems li {
+    margin: 0 15px; /* Set margin between navigation items */
+}
+
+/* Styles for navigation links */
+.navItems li a {
+    font-size: 15px;
+    color: black;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+/* Hover effect for navigation links */
+.navItems li a:hover {
+    color: #174d98; /* Change link color on hover */
+}
+
+/* Wrapper styles */
+.wrapper {
+    display: inline-block;
+    width: 100%;
+    height: 100vh; /* Set wrapper height to fill the entire viewport */
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    padding: 0 10%; /* Set horizontal padding */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Styling for pseudo-elements before and after the wrapper */
+.wrapper::before,
+.wrapper::after {
+    position: relative;
+    content: "";
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 35%;
+    top: 60%;
+    background: linear-gradient(45deg, rgb(0, 145, 255), white); /* Set gradient background */
+}
+
+
+.cols {
+    width: 50%;
+}
+
+.cols0{
+    z-index: 5;
+}
+
+.topline {
+    padding-top: 50%;
+    display: block;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: black;
+}
+
+.topline::after {
+    position: absolute;
+    content: " ";
+    height: 4px;
+    width: 45px;
+    bottom: 10px; /* Removed space between '10' and 'px' */
+    background-color: #174d98;
+}
+
+h1 {
+    display: block;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: black;
+}
+
+.multiText {
+    color: rgb(4, 57, 103);
+    text-transform: capitalize;
+}
+
+.btns {
+    width: 100%;
+    text-align: left; /* Center the button container */
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #174d98;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    /* box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4); */
+}
+
+button:hover {
+    background-color:#f8b31a;
+}
+
+.images {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition:  bottom 1s, left 1s; /* Adjusted transition time */
+}
+
+.images .two {
+    position: absolute;
+    top: -50px; /* Adjust the positioning as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 100px; /* Set the width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.5s; /* Add a transition for the hover effect */
+}
+
+/* Add a hover effect */
+.images:hover .two {
+    transform: scale(1.1); /* Scale up the image on hover */
+}
+.images:hover .shape {
+    bottom: 40px
+}
+
+
+.images:hover .girl {
+    left: 45%; /* Move the girl right */
+}
+
+
+/* -----------about--------------- */
+#about{
+    padding: 30px 0;
+    color: #000000;
+}
+.row{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out; /* Adding a smooth transition */
+}
+
+.about-col-1 img:hover {
+    transform: scale(1.1); /* Scale up the image slightly on hover */
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links {
+    margin-right: 50px;
+    font-size: 26px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease-in-out; /* Adding a smooth transition for color change */
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #174d98;;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: width 0.5s ease-in-out; /* Smoother transition for the underline */
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-links.active-link {
+    color: #174d98; /* Change color on active link */
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #174d98;
+    font-size: 20px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/* ----------------services------------- */
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    color: #fff;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list img {
+    width: 100%; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    /* Add any additional styles for the images */
+  }
+.services-list div i{
+    padding-top: 20%;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #174d98;;
+    transform: translateY(-10px);
+}
+
+
+/* --------Cards---------- */
+
+#Challenge .sub-title {
+    padding-top: 10%; /* Adjust the value as needed */
+  }
+  
+.card-container {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    -webkit-perspective: 500px;
+            perspective: 500px;
+}
+
+.card-container:hover .card{
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+}
+
+.card {
+    -webkit-transition: -webkit-transform 0.7s;
+            transition: transform 0.7s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+}
+
+.back {
+    -webkit-transform: rotateY( 180deg );
+            transform: rotateY( 180deg );
+}
+
+/*Custom Styles*/
+.cards-container{
+   display: -webkit-flex;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-flex-direction: row;
+   -webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-direction: row;
+           flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card {
+  width: 200px;
+	height: 200px;
+  margin: 10px;
+}
+
+.card img {
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire space */
+  }
+
+.front, .back {
+  box-shadow: 0 1px 6px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+img {
+  display: block;
+}
+
+/* -------portfolio----------- */
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+   transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #174d98;;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+/* .btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #174d98;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000000;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #174d98;;
+}1 */
+
+/* ---------contact-------- */
+
+#contact {
+    padding-top: 10%;
+    padding: 80px 0;
+}
+
+.contact-left {
+    width: 50%;
+    float: left;
+}
+
+/* Style for Contact Info */
+.contact-left p {
+    padding: 10%;
+    margin-bottom: 10px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s, color 0.3s; /* Include color transition */
+}
+
+.social-icons a:hover {
+    color: #174d98;
+    transform: translateY(-5px);
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 130%;
+    height: 20%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Social section styles */
+.social-section {
+    text-align: center;
+    min-height: 70vh;
+    width: 100%;
+    background-image: url(images/Experience.png); /* Replace 'your-image-url.jpg' with the URL or path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* Heading styles */
+.social-section h2 {
+    padding-top: 0%;
+    font-size: 44px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Social links container styles */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Social link styles */
+.social-link {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+/* Social link icon styles */
+.social-link img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Social link hover effect */
+.social-link:hover {
+    color: #007bff;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* -----------------css for small screens--------- */
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #174d98;;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
